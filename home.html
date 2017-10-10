@@ -1,0 +1,67 @@
+<html>
+<head>
+<script> function show(shown, hidden) { document.getElementById(shown).style.display='block'; document.getElementById(hidden).style.display='none'; return false; } 
+
+var width = 500;
+var height = 500;
+</script>
+</head>
+<body>
+<div id="Home">
+<center>
+<h1><b>Welcome To the Pte Dubbs App</b></h1>
+<hr color ="black">
+<center>
+<table>
+<tr><a href="#" onclick="return show('Storys','Home');"><button>Storys</button></a>
+</tr>
+<tr>
+<a href="#" onclick="return show('Apps','Home');"><button>Other Apps</button></a>
+</tr>
+<tr>
+<a href="#" onclick="return show('Yt','Home');"><button>Youtube</button></a>
+</tr>
+<br>
+<tr>
+<a href="#" onclick="return show('Chat','Home');"><button>Chat</button></a>
+</tr>
+</table>
+</center>
+</div>
+
+
+<div id="Apps" style="display:none">
+
+<center>
+<a href="#" onclick="return show('Home','Apps');"><button>Home</button></a>
+</center>
+</div>
+
+<div id="Storys" style="display:none">
+
+<center>
+<a href="#" onclick="return show('Home','Storys');"><button>Home</button></a>
+</center>
+</div>
+
+<div id="Yt" style="display:none">
+<center>
+<a href="#"><img src="logo.jpg" width="500" height="500"/></a>
+<br>
+<a href="#" onclick="return show('Home','Yt');"><button>Home</button></a>
+</center>
+</div>
+
+<div id="Chat" style="display:none">
+<center>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div> Chat is loading...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%248VhhG2NxNAmaKk2KiOKRV%2F"+"&opts=16862&num=10&ts=1507671724405");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+<a href="#" onclick="return show('Home','Chat');"><button>Home</button></a>
+</center>
+</div>
+</center>
+</body>
+</html>
