@@ -2,30 +2,40 @@
 <head>
 <script> function show(shown, hidden) { document.getElementById(shown).style.display='block'; document.getElementById(hidden).style.display='none'; return false; } 
 
-var width = 500;
-var height = 500;
 </script>
 </head>
-<body>
+<body bgcolor="#D3D3D3">
+<font size="10">
 <div id="Home">
 <center>
 <h1><b>Welcome To the Pte Dubbs App</b></h1>
 <hr color ="black">
 <center>
 <table>
-<tr><a href="#" onclick="return show('Storys','Home');"><button>Storys</button></a>
+<tr><a href="#" onclick="return show('Storys','Home');"><img src="story.png" width="150" height="150"/></a>
 </tr>
 <tr>
-<a href="#" onclick="return show('Apps','Home');"><button>Other Apps</button></a>
+<a href="#" onclick="return show('Apps','Home');"><img src="app.png" width="150" height="150"/></a>
 </tr>
 <tr>
-<a href="#" onclick="return show('Yt','Home');"><button>Youtube</button></a>
+<a href="#" onclick="return show('Yt','Home');"><img src="youtube.png" width="150" height="150"/></a>
 </tr>
 <br>
+<br>
 <tr>
-<a href="#" onclick="return show('Chat','Home');"><button>Chat</button></a>
+<a href="#" onclick="return show('Chat','Home');"><img src="chat.png" width="150" height="150"/></a>
+</tr>
+<tr>
+<a href="#" onclick ="return show('Ex','Home');"><img src="ev.png" width="150" height="150"/></a>
 </tr>
 </table>
+</center>
+</div>
+
+<div id="Ex" style ="display:none">
+
+<center>
+<a href="#" onclick="return show('Home','Ex');"><img src="home.png" width="100" heifht="100"/></a>
 </center>
 </div>
 
@@ -33,35 +43,51 @@ var height = 500;
 <div id="Apps" style="display:none">
 
 <center>
-<a href="#" onclick="return show('Home','Apps');"><button>Home</button></a>
+<a href="#" onclick="return show('Home','Apps');"><img src="home.png" width="100" heifht="100"/></a>
 </center>
 </div>
+
 
 <div id="Storys" style="display:none">
+<center>
+</center>
+
 
 <center>
-<a href="#" onclick="return show('Home','Storys');"><button>Home</button></a>
+<a href="#" onclick="return show('Home','Storys');"><img src="home.png" width="100" heifht="100"/></a>
 </center>
 </div>
 
+
 <div id="Yt" style="display:none">
+<p>Channel Name: Pte Dubbs</p>
 <center>
-<a href="#"><img src="logo.jpg" width="500" height="500"/></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W1VxsmJvz-0" frameborder="0" allowfullscreen></iframe>
+<p>Grow up Episode 1</p>
 <br>
-<a href="#" onclick="return show('Home','Yt');"><button>Home</button></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EKxItjlmKus" frameborder="0" allowfullscreen></iframe>
+<p>Drift Trike</p>
+<br>
+<p>more of these on my youtube.. Please consider subscribing!</p>
+<br>
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UCkj1KQ4q7YA6E5SvCPbJXYA" data-layout="full" data-count="default"></div>
+<a href="#" onclick="return show('Home','Yt');"><img src="home.png" width="100" heifht="100"/></a>
 </center>
 </div>
 
 <div id="Chat" style="display:none">
 <center>
 <!-- begin wwww.htmlcommentbox.com -->
- <div> Chat is loading...</div>
+ <div id="HCB_comment_box">Chat is loading...</div>
  <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
- <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%248VhhG2NxNAmaKk2KiOKRV%2F"+"&opts=16862&num=10&ts=1507671724405");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1507855888744");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 <!-- end www.htmlcommentbox.com -->
-<a href="#" onclick="return show('Home','Chat');"><button>Home</button></a>
+<a href="#" onclick="return show('Home','Chat');"><img src="home.png" width="100" heifht="100"/></a>
 </center>
 </div>
 </center>
+</font>
 </body>
 </html>
