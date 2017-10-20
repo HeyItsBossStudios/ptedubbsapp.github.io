@@ -3,14 +3,39 @@
 <script> function show(shown, hidden) { document.getElementById(shown).style.display='block'; document.getElementById(hidden).style.display='none'; return false; } 
 
 </script>
+<style>
+.sidebar {
+background-color: red;
+width: 300px;
+}
+.sidebara{
+width: 300px;
+}
+
+.hotbar{
+position: absolute; bottom: 0; width: 100%;
+}
+</style>
 </head>
-<body bgcolor="#D3D3D3">
+<body background="back.jpg">
 <font size="10">
 <div id="Home">
 <center>
 <h1><b>Welcome To the Pte Dubbs App</b></h1>
 <hr color ="black">
+<div align="right">
+<div class="sidebar">
 <center>
+<p>Newswire</p>
+</center>
+</div>
+<div class="sidebara">
+<li>Nothing</li>
+</div>
+</div>
+<center>
+<div class="hotbar">
+<hr color="black">
 <table>
 <tr><a href="#" onclick="return show('Storys','Home');"><img src="story.png" width="150" height="150"/></a>
 </tr>
@@ -26,12 +51,10 @@
 <tr>
 <a href="#" onclick ="return show('Ex','Home');"><img src="ev.png" width="150" height="150"/></a>
 </tr>
-<br>
-<br>
-<br>
-<br>
+
 </table>
 </center>
+</div>
 </div>
 
 <div id="Ex" style ="display:none">
@@ -43,8 +66,10 @@
 
 
 <div id="Apps" style="display:none">
-
 <center>
+
+<br>
+<br>
 <a href="#" onclick="return show('Home','Apps');"><img src="home.png" width="100" heifht="100"/></a>
 </center>
 </div>
